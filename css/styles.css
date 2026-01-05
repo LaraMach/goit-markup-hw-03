@@ -58,7 +58,7 @@ body {
     padding-bottom: 120px;
 }
 
-.our-features-visually-hidden {
+.visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -152,24 +152,21 @@ body {
 
 /* hero */
 .hero {
-background: var(--navy-blue);
-background-color: var(--navy-blue);
-text-align: center;
-}
+    background-color: var(--navy-blue);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    }
 
 .hero-titel {
     font-weight: 700;
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
-    color: var(--white);
+    color: #ffffff;
     max-width: 496px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
 }
-
 
 .hero-btn {
     font-weight: 500;
@@ -205,7 +202,6 @@ text-align: center;
 .features-item {
     width: calc((100% - 72px) / 4);
 }
-
 
 .features-subtitle {
     font-weight: 500;
@@ -250,6 +246,10 @@ margin-bottom: 72px;
     border-radius: 0 0 4px 4px;
 }
 
+.team-content {
+    padding: 32px 16px;
+}
+
 .team-name {
    font-weight: 500;
    font-size: 20px;
@@ -257,8 +257,6 @@ margin-bottom: 72px;
    letter-spacing: 0.02em;
    text-align: center;
    color: var(--navy-blue);
-   margin-top: 32px;
-   margin-bottom: 8px;
 }
 
 .team-position {
@@ -268,12 +266,10 @@ margin-bottom: 72px;
    letter-spacing: 0.02em;
    text-align: center;
    color: var(--slate);
-   margin-bottom: 32px;
 }
 
 /* portfolio */
 .portfolio {}
-
 
 .our-portfolio {
    font-weight: 700;
@@ -293,7 +289,12 @@ margin-bottom: 72px;
 
 .portfolio-card {
     width: calc((100% - 48px) / 3);
-    border-bottom: 1px solid var(--cornflower);
+}
+
+.portfolio-content {
+    padding: 32px 16px;
+    border: 1px solid var(--cornflower);
+    border-top: none;
 }
 
 .portfolio-name {
@@ -330,22 +331,6 @@ margin-bottom: 72px;
     max-width: 264px;
     margin-top: 16px;
 }
-/*.footer-logo {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0.03em;
-    color: var(--cloud);
-}
-
-.footer-logo-web {
-    color: var(--iris);
-}
-
-.footer-logo:hover,
-.footer-logo:focus {
-    color: var(--cornflower);
-}*/
 
 .footer-logo,
 .footer-logo-web {
